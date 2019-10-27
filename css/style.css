@@ -1,0 +1,127 @@
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #left-content {
+        position: absolute;
+        width: 100%;
+        top: 28vh;
+    }  
+
+    header {
+        height: 105vh !important;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #left-content {
+        position: absolute;
+        width: 100%;
+        top: 35vh;
+    }
+
+    header {
+        height: 85vh !important;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #left-content {
+        position: absolute;
+        width: 100%;
+        top: 0vh;
+    }
+
+    header {
+        height: 60vh !important;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #left-content {
+        position: absolute;
+        width: 100%;
+        top: 0vh;
+    }  
+
+    header {
+        height: 65vh !important;
+    }
+
+    ul.navbar-nav{
+        margin-left: 3em !important;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #left-content {
+        position: absolute;
+        width: 100%;
+        top:7vh;
+    }  
+
+    header {
+        height: 75vh !important;
+    }
+}
+
+body{
+    background: #ffffff;
+}
+
+/* header and nav*/
+
+header{
+    height: 75vh;
+    padding : 0 10px;
+    background: white;
+}
+
+/* header > nav {
+    box-shadow: 2px 1px 5px #ccc !important;
+    padding: 1em 2em !important;
+} */
+
+#header-content-row{
+    position: absolute;
+    top: 16vh;
+    left: 15px;
+    /* align-items: center; */
+    width: 80%;
+    right: 15px;
+    margin: auto;
+}
+
+#left-content{
+    position: absolute;
+    width: 100%;
+
+}
+
+.rotate-sat{
+    animation: rotate 4s infinite ;
+    animation-direction: alternate;
+}
+
+@keyframes rotate{ 
+    from{
+        transform: rotate(-30deg);
+    }
+
+    to{
+        transform: rotate(30deg);
+    }
+}
