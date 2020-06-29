@@ -64,14 +64,7 @@
               </a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="/spill-sat.html">
-                Spill-Sat
-              </a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#">
-                The Team
-              </a>
+              <a class="nav-link" href="./about-us.html"> About Us </a>
             </li>
           </ul>
 
@@ -88,7 +81,7 @@
       </nav>
       <div class="container" id="particles-js">
         <div class="row" id="header-content-row">
-          <div class="col-md-6">
+          <div class="col-md-6 animation-element bounce-down">
             <div id="left-content">
               <h1 class="mb-4 font-weight-bold">
                 Automated Aerial surveillance all year round for your most
@@ -96,9 +89,15 @@
               </h1>
               <p class="lead">
                 We use Balloon Satellite and intelligent software for automated
-                assessment of surveillance feeds giving rise to real-time
-                monitoring, event detection, analytics, Live-logging, etc.
+                assessment of surveillance feeds giving rise to
+                <span id="typed"></span>
               </p>
+              <div id="typed-strings">
+                <span> Real-time monitoring</span>
+                <span> Event detection</span>
+                <span> Analytics</span>
+                <span> Live-logging</span>
+              </div>
               <a href="#technology">
                 <button
                   class="btn mb-3 btn-primary btn-lg px-4 d-block shadow shadow-sm"
@@ -131,7 +130,7 @@
         </div>
         <div class="row">
           <div class="col-md-4 my-2">
-            <div class="card rounded-3">
+            <div class="card rounded-3 animation-element slide-left">
               <div class="card-body">
                 <h3>Long Duration aerial surveillance</h3>
                 <p>
@@ -144,7 +143,7 @@
             </div>
           </div>
           <div class="col-md-4 my-2">
-            <div class="card">
+            <div class="card animation-element bounce-up">
               <div class="card-body">
                 <h3>
                   High surveillance resolution and coverage
@@ -159,7 +158,7 @@
             </div>
           </div>
           <div class="col-md-4 my-2">
-            <div class="card">
+            <div class="card animation-element slide-right">
               <div class="card-body">
                 <h3>Military-grade security</h3>
                 <p>
@@ -183,7 +182,7 @@
         </div>
         <div class="row py-2 my-3">
           <div
-            class="col-md-6"
+            class="col-md-6 animation-element slide-left"
             style="
               display: flex;
               flex-direction: column;
@@ -206,7 +205,7 @@
               ease.
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 animation-element slide-right">
             <img src="./img/ballon-model.jpg" class="img-fluid shadow" alt="" />
           </div>
         </div>
@@ -220,7 +219,7 @@
           </h3>
         </div>
         <div class="row py-2 my-3">
-          <div class="col-md-6">
+          <div class="col-md-6 animation-element slide-left">
             <div class="row d-flex items-center my-4 py-3">
               <div class="col-2">
                 <span class="number-border font-weight-bold">
@@ -250,7 +249,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 animation-element slide-right">
             <div class="row d-flex items-center my-4 py-3">
               <div class="col-2">
                 <span class="number-border font-weight-bold">
@@ -573,6 +572,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+      var typed = new Typed("#typed", {
+        stringsElement: "#typed-strings",
+        showCursor: true,
+        typeSpeed: 100,
+        loop: true,
+        backDelay: 1500
+      });
+    </script>
     <script>
       particlesJS.load("particles-js", "./assets/particles.json", function () {
         console.log("callback - particles.js config loaded");
@@ -636,6 +645,35 @@
             }
           }
         });
+    </script>
+    <script>
+      var $animation_elements = $(".animation-element");
+      var $window = $(window);
+      $window.on("scroll resize", check_if_in_view);
+      $window.trigger("scroll");
+
+      function check_if_in_view() {
+        var window_height = $window.height();
+        var window_top_position = $window.scrollTop();
+        var window_bottom_position = window_top_position + window_height;
+
+        $.each($animation_elements, function () {
+          var $element = $(this);
+          var element_height = $element.outerHeight();
+          var element_top_position = $element.offset().top;
+          var element_bottom_position = element_top_position + element_height;
+
+          //check to see if this current container is within viewport
+          if (
+            element_bottom_position >= window_top_position &&
+            element_top_position <= window_bottom_position
+          ) {
+            $element.addClass("in-view");
+          } else {
+            $element.removeClass("in-view");
+          }
+        });
+      }
     </script>
   </body>
 </html>
