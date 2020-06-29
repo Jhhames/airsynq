@@ -1,336 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AirSynQ Home - Aerial Surveillance Technology</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/logo-icon-blue.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AirSynQ Home - GeoSensing Technology </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
-</head>
-
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-white p-nav">
-            <a class="navbar-brand" href="/">
-                <img src="img/logo.jpg" alt="logo" class="img-fluid" style="width:50px;">
-                <h3 class="d-inline"> AirSynQ</h3>
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-white p-nav"
+      >
+        <a class="navbar-brand" href="/">
+          <img
+            src="img/logo.jpg"
+            alt="logo"
+            class="img-fluid"
+            style="width: 150px;"
+          />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#why">
+                Why AirSynQ?
+              </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="/spill-sat.html">
+                Spill-Sat
+              </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">
+                The Team
+              </a>
+            </li>
+          </ul>
+
+          <a href="mailto:info@airsynq.io" target="_blank">
+            <button
+              class="btn btn-outline-primary btn-rounded my-2 my-sm-0 px-4 btn-sm shadow shadow-sm"
+              type="submit"
+            >
+              Contact us
+              <span class="ml-2 fa fa-envelope"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">
-                            Why AirSynQ?
-                        </a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">
-                            Our Products
-                        </a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">
-                            The Team
-                        </a>
-                    </li>
-
-                </ul>
-
-                <a href="#">
-                    <button class="btn btn-outline-primary btn-rounded my-2 my-sm-0 px-4 btn-sm" type="submit">
-                        Contact us
-                        <span class="fa fa-envelope"></span>
-                    </button>
-                </a>
-
-            </div>
-        </nav>
-        <div class="container" id="particles-js">
-            <div class="row" id="header-content-row">
-                <div class="col-md-6">
-                    <div id="left-content">
-                        <h1 class="mb-4">
-                            Using Space science and techology (GeoSensing) to solve modern problems
-                        </h1>
-                        <p class="lead">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, rerum!
-                        </p>
-                        <a href="/register">
-                            <button class="btn mb-3 btn-primary btn-lg px-5 d-block">Learn more
-                                <span class="fa fa-angle-double-down"></span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="img/balloon-2352394_960_720.png" alt="" class="img-fluid rotate-sat">
-                </div>
-            </div>
+          </a>
         </div>
+      </nav>
+      <div class="container" id="particles-js">
+        <div class="row" id="header-content-row">
+          <div class="col-md-6">
+            <div id="left-content">
+              <h1 class="mb-4 font-weight-bold">
+                Automated Aerial surveillance all year round for your most
+                valued assets.
+              </h1>
+              <p class="lead">
+                We use Balloon Satellite and intelligent software for automated
+                assessment of surveillance feeds giving rise to real-time
+                monitoring, event detection, analytics, Live-logging, etc.
+              </p>
+              <a href="#technology">
+                <button
+                  class="btn mb-3 btn-primary btn-lg px-4 d-block shadow shadow-sm"
+                >
+                  Learn more
+                  <span class="ml-3 fa fa-angle-double-down bounce-1"></span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 d-none d-md-block">
+            <img
+              src="img/balloon-2352394_960_720.png"
+              alt=""
+              class="img-fluid rotate-sat"
+            />
+          </div>
+        </div>
+      </div>
     </header>
-    <section class="p-4 bg-light" id="techology">
-        <div class="container">
-            <div class="row py-3">
-                <h3 class="font-weight-bold w-100 text-center">Whats our Technology like?</h3>
-                <p class="lead text-center w-100">
-                    Lorem ipsum dolor sit amet.
+    <section class="p-4 my-4 bg-light" id="technology">
+      <div class="container">
+        <div class="row py-3">
+          <h3 class="font-weight-bold w-100 text-center">
+            Our Technology
+          </h3>
+          <p class="lead text-center w-100">
+            <!-- Lorem ipsum dolor sit amet. -->
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 my-2">
+            <div class="card rounded-3">
+              <div class="card-body">
+                <h3>Long Duration aerial surveillance</h3>
+                <p>
+                  With a 90 day continuous flight time, our balloon satellite
+                  brings the best of drone technology and satellite technology
+                  into a merger backed by a floating helium balloon satellite
+                  platform.
                 </p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div class="card">
+              <div class="card-body">
+                <h3>
+                  High surveillance resolution and coverage
+                </h3>
+                <p>
+                  Capturing high-resolution aerial image data consistently is
+                  made easier with our high-resolution visible spectrum and
+                  near-infrared camera. Together they are capable of wide-angle
+                  image capturing to cover large areas at once in real-time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div class="card">
+              <div class="card-body">
+                <h3>Military-grade security</h3>
+                <p>
+                  When collecting sensitive data, secure and reliable protection
+                  of data is our priority. Thus, we have incorporated
+                  military-grade security encryption protocols to protect all
+                  the data collected in an end-to-end fashion.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-4 my-4" id="ballon">
+      <div class="container">
+        <div class="row py-2">
+          <h3 class="w-100 text-center font-weight-bold">
+            Balloon Satellite: The what, the how and the why
+          </h3>
+        </div>
+        <div class="row py-2 my-3">
+          <div
+            class="col-md-6"
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            "
+          >
+            <p>
+              Our balloon satellite is an unmanned aerial system that uses
+              helium gas contained in a balloon to generate upward lift without
+              expending energy. The balloon carries satellite-like equipment
+              powered by an array of lightweight solar panels, used to collect
+              data and relay it to a corresponding ground station for processing
+              in real-time.
+            </p>
+            <p>
+              Our balloon satellite provides unparalleled flight duration of up
+              to 90-days uninterrupted at a relatively low cost. With its
+              ability to operate autonomously in any weather condition, it can
+              successfully carry out a long-duration surveillance mission with
+              ease.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="./img/ballon-model.jpg" class="img-fluid shadow" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-4 bg-light my-4" id="how">
+      <div class="container">
+        <div class="row py-2">
+          <h3 class="w-100 text-center font-weight-bold">
+            How industrial clients use AirSynQ
+          </h3>
+        </div>
+        <div class="row py-2 my-3">
+          <div class="col-md-6">
+            <div class="row d-flex items-center my-4 py-3">
+              <div class="col-2">
+                <span class="number-border font-weight-bold">
+                  <img src="./img/logo-icon-black.png" width="15px" alt="" />
+                </span>
+              </div>
+              <div class="col-10">
+                <p class="ml-3">
+                  Pipeline monitoring for oil and gas companies in Nigeria to
+                  prevent pipeline vandalism.
+                </p>
+              </div>
+            </div>
+            <div class="row d-flex items-center my-4 py-3">
+              <div class="col-2">
+                <span class="number-border font-weight-bold">
+                  <img src="./img/logo-icon-black.png" width="15px" alt="" />
+                </span>
+              </div>
+              <div class="col-10">
+                <p class="ml-3">
+                  Defence and military, long-duration high altitude aerial
+                  surveillance solution to cater for border security, insurgence
+                  tracking, terrorism activities, enemy base monitoring and
+                  intel-gathering.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row d-flex items-center my-4 py-3">
+              <div class="col-2">
+                <span class="number-border font-weight-bold">
+                  <img src="./img/logo-icon-black.png" width="15px" alt="" />
+                </span>
+              </div>
+              <div class="col-10">
+                <p class="ml-3">
+                  Anti-poaching endeavours to constantly monitor wildlife and
+                  prevent illegal hunting and poaching of protected endangered
+                  animals.
+                </p>
+              </div>
+            </div>
+            <div class="row d-flex items-center my-4 py-3">
+              <div class="col-2">
+                <span class="number-border font-weight-bold">
+                  <img src="./img/logo-icon-black.png" width="15px" alt="" />
+                </span>
+              </div>
+              <div class="col-10">
+                <p class="ml-3">
+                  Maritime Surveillance: keeping track of maritime operations
+                  from the sky, track fishing operations, tracking unauthorized
+                  ships as well as prevention of sea piracy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-4 my-4" id="why">
+      <div class="container">
+        <div class="row py-2">
+          <h3 class="w-100 text-center font-weight-bold">
+            Why You would choose AirsynQ
+          </h3>
+          <!-- <p class="w-100 text-center">Lorem ipsum dolor sit amet.</p> -->
+        </div>
+        <div class="row py-2 my-3">
+          <div class="col-md-6">
+            <h4 class="font-weight-bold mt-3">Military-grade security</h4>
+            <p>
+              Data protection is put at the core design to ensure maximum data
+              protection is guaranteed.
+            </p>
+            <!-- <center>
+              <img
+                src="./img/dashboard.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </center> -->
+          </div>
+          <div class="col-md-6 mx-auto">
+            <h4 class="font-weight-bold mt-3">
+              Long duration aerial surveillance
+            </h4>
+            <p>
+              We offer up to 90 days uninterrupted aerial surveillance real-time
+              data provision.
+            </p>
+          </div>
+        </div>
+        <!-- <div class="row py-2 my-3" >
+          <div class="col-md-6 mx-auto">
+            <h4 class="font-weight-bold mt-3">Military-grade security</h4>
+            <p>
+              Data protection is put at the core design to ensure maximum data
+              protection is guaranteed.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <center>
+              <img
+                src="./img/automated-oprations.svg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </center>
+          </div>
+        </div> -->
+        <div class="row py-2 my-3">
+          <div class="col-md-6">
+            <h4 class="font-weight-bold mt-3">High Spatial resolution:</h4>
+            <p>
+              Even at such high altitudes, high-end sensors are employed to
+              capture detailed images up o 1mm resolution od up to 625 square km
+              area (*configuration may vary)
+            </p>
+            <!-- <center>
+              <img
+                src="./img/accessment.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </center> -->
+          </div>
+
+          <div class="col-md-6 mx-auto">
+            <h4 class="font-weight-bold mt-3">
+              Localized threat detection:
+            </h4>
+            <p>
+              With a cloud-based ML processing software, threat detection and
+              evaluation is carried out on the fly and reported instantaneously.
+            </p>
+          </div>
+        </div>
+        <div class="row py-2 my-3">
+          <div class="col-md-6 mx-auto">
+            <h4 class="font-weight-bold mt-3">High Spatial resolution:</h4>
+            <p>
+              Even at such high altitudes, high-end sensors are employed to
+              capture detailed images up o 1mm resolution od up to 625 square km
+              area (*configuration may vary)
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4 class="font-weight-bold mt-3">High altitude operation</h4>
+            <p>
+              With the ability to operate above and below cloud level, a minimum
+              operating altitude of 3000m and maximum of ~35km-40km ensures that
+              the balloon system is completely out of plain sight from the
+              ground.
+            </p>
+            <!-- <center>
+              <img
+                src="./img/enterprise.jpg"
+                alt=""
+                class="img-fluid img-thumbnail"
+              />
+            </center> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="p-4" id="products">
+      <container>
+        <div class="row my-2">
+          <h3 class="font-weight-bold w-100 text-center">Our Products</h3>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 p-4 border rounded border-2">
             <div class="row">
-                <div class="col-md-4 my-2">
-                    <div class="card rounded-3">
-                        <div class="card-body">
-                            <h3>Use of Balloon Satellite</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ea ad aut, iusto numquam
-                                molestiae nostrum adipisci recusandae facilis iure.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 my-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3>
-                                Machine Learning
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ea ad aut, iusto numquam
-                                molestiae nostrum adipisci
-                                recusandae facilis iure.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 my-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3>Enterprise softwares</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ea ad aut, iusto numquam
-                                molestiae nostrum adipisci
-                                recusandae facilis iure.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+              <div class="col-md-4">
+                <img
+                  src="./img/balloon-2352394_960_720.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-8">
+                <a href="/spill-sat.html">
+                  <h4>Spill-Sat</h4>
+                </a>
+                <p>
+                  Spill-sat is a oil spill, gas leak and vandalization detection
+                  system. It uses a balloon satellite to collect aerial data
+                  that is processed and used to provide real-time analytics to
+                  oil companies.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-
-    <section class="p-4" id="why">
-        <div class="container">
-            <div class="row py-2">
-                <h3 class="w-100 text-center font-weight-bold">Why AirSynQ?</h3>
-                <p class="w-100 text-center">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="row py-2 my-1">
-                <div class="col-md-6">
-                    <center>
-
-                        <img src="./img/dashboard.png" alt="" class="img-fluid img-thumbnail">
-                    </center>
-                </div>
-                <div class="col-md-6 mx-auto">
-                    <h4 class="font-weight-bold mt-3"> Real time surveillance feedback </h4>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, minima!
-                        Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Saepe qui voluptatum consectetur sunt assumenda eius vitae corporis molestias perspiciatis
-                        laborum, iusto numquam repellat sit alias vero aliquid hic maxime rerum.
-                    </p>
-                </div>
-            </div>
-            <div class="row py-2 my-1">
-
-                <div class="col-md-6 mx-auto">
-                    <h4 class="font-weight-bold mt-3"> Subscription Based Service </h4>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, minima!
-                        Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Saepe qui voluptatum consectetur sunt assumenda eius vitae corporis molestias perspiciatis
-                        laborum, iusto numquam repellat sit alias vero aliquid hic maxime rerum.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <center>
-                        <img src="./img/subscription.png" alt="" class="img-fluid img-thumbnail">
-                    </center>
-                </div>
-            </div>
+      </container>
+    </section> -->
+    <!-- <section class="p-4 my-4" id="team">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section> -->
+    <section class="p-4 my-4" id="supported-by">
+      <div class="container">
+        <div class="row">
+          <h3 class="font-weight-bold w-100 text-center">
+            Our Patners and customers
+          </h3>
         </div>
-    </section>
-    <section class="p-4" id="products">
-        <container>
-            <div class="row my-2">
-                <h3 class="font-weight-bold w-100 text-center">Our Products</h3>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-8 p-4 border rounded border-2">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="./img/balloon-2352394_960_720.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-md-8">
-                            <h4>Spill-Sat</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto voluptate dolorum
-                                quia explicabo qui sit? Similique nam, maxime amet voluptatum temporibus veritatis
-                                exercitationem unde fugit quis, asperiores veniam eum blanditiis!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </container>
-    </section>
-    <section class="p-4" id="team">
-        <div class="container">
-            <div class="row">
-
-            </div>
+        <div class="row py-3" style="display: flex; align-items: center;">
+          <div class="col-md-3 my-2">
+            <center>
+              <a href="https://nghub.fb.com" target="blank">
+                <img
+                  src="./img/nghub-logo.svg"
+                  alt=""
+                  class="img-fluid support-image"
+                />
+              </a>
+            </center>
+          </div>
+          <div class="col-md-3 my-2">
+            <center>
+              <a href="https://hacktive.dev/" target="blank">
+                <img
+                  src="./img/hacktive.png"
+                  alt=""
+                  class="img-fluid support-image"
+                />
+              </a>
+            </center>
+          </div>
         </div>
-    </section>
-    <section class="p-4" id="supported-by">
-        <div class="container">
-            <div class="row">
-                <h3 class="font-weight-bold w-100 text-center">Our Patners and customers </h3>
-            </div>
-            <div class="row py-3">
-                <div class="col-md-3 my-2">
-                    <center>
-                        <a href="https://nghub.fb.com" target="blank">
-                            <img src="./img/nghub-logo.svg" alt="" class="img-fluid support-image">
-                        </a>
-                    </center>
-                </div>
-                <div class="col-md-3 my-2">
-                    <center>
-                        <a href="https://hacktive.dev/" target="blank">
-                            <img src="./img/hacktive.png" alt="" class="img-fluid support-image">
-                        </a>
-                    </center>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
     <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                        <div class="ft-logo">
-                            <h3 class="font-weight-bold">AirSynQ</h3>
-                        </div>
-                    </div>
-                </div>
-                <hr class="footer-line">
-                <div class="row ">
-                    <!-- footer-about -->
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-                        <div class="footer-widget ">
-                            <div class="footer-title">Company</div>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Technology</a></li>
-                                <li><a href="#">why AirSync</a></li>
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#">Team</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /.footer-about -->
-                    <!-- footer-links -->
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-                        <div class="footer-widget ">
-                            <div class="footer-title">Quick Links</div>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Technology</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">FAQ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /.footer-links -->
-                    <!-- footer-links -->
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
-                        <div class="footer-widget ">
-                            <div class="footer-title">Social</div>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Twitter</a></li>
-                                <li><a href="#">Google +</a></li>
-                                <li><a href="#">Linked In</a></li>
-                                <li><a href="#">Facebook</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /.footer-links -->
-                    <!-- footer-links -->
-                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-6 col-6 ">
-                        <div class="footer-widget ">
-                            <h3 class="footer-title">Subscribe Newsletter</h3>
-                            <form>
-                                <div class="newsletter-form">
-                                    <input class="form-control" placeholder="Enter Your Email address" type="text">
-                                    <button class="btn btn-primary p-3 btn-sm" type="submit">Go</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- /.footer-links -->
-                    <!-- tiny-footer -->
-                </div>
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center ">
-                        <div class="tiny-footer">
-                            Copyright &copy; AirSynQ 2019
-                        </div>
-                    </div>
-                    <!-- /. tiny-footer -->
-                </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="ft-logo">
+                <h3 class="font-weight-bold">AirSynQ</h3>
+              </div>
             </div>
+          </div>
+          <hr class="footer-line" />
+          <div class="row">
+            <!-- footer-about -->
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+              <div class="footer-widget">
+                <div class="footer-title">Company</div>
+                <ul class="list-unstyled">
+                  <li><a href="#technology">Technology</a></li>
+                  <li><a href="#why">why AirSynQ</a></li>
+                  <li><a href="#products">Products</a></li>
+                  <li><a href="#">Team</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.footer-about -->
+            <!-- footer-links -->
+            <div class="col-xl-6 col-lg-6 col-md-4 col-sm-12 col-6">
+              <div class="footer-widget">
+                <div class="footer-title">Contact us</div>
+                <ul class="list-unstyled">
+                  <li class="lead my-1">
+                    <span class="fa fa-map-marker"></span> No 8, Montgomery
+                    Road, Yaba, Lagos. Nigeria.
+                  </li>
+                  <li class="lead my-1">
+                    <a href="tel:+2347016074661">
+                      <span class="fa fa-phone"></span> 07016074661</a
+                    >
+                  </li>
+                  <li class="lead my-1">
+                    <a href="tel:+2349092916898">
+                      <span class="fa fa-phone"></span> 09092916898</a
+                    >
+                  </li>
+                  <!-- <li class="lead my-1">
+                                    <a href="tel:+2349092916898"> <span class="fa fa-phone"></span> 09092916898</a>
+                                </li> -->
+                </ul>
+              </div>
+            </div>
+            <!-- /.footer-links -->
+            <!-- footer-links -->
+            <!-- <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 ">
+                    <div class="footer-widget ">
+                        <div class="footer-title">Social</div>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Google +</a></li>
+                            <li><a href="#">Linked In</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            <!-- /.footer-links -->
+            <!-- footer-links -->
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-6 col-6">
+              <div class="footer-widget">
+                <h3 class="footer-title">Subscribe Newsletter</h3>
+                <form>
+                  <div class="newsletter-form">
+                    <input
+                      class="form-control"
+                      placeholder="Enter Your Email address"
+                      type="text"
+                    />
+                    <button class="btn btn-primary p-3 btn-sm" type="submit">
+                      Go
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- /.footer-links -->
+            <!-- tiny-footer -->
+          </div>
+          <div class="row">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center"
+            >
+              <div class="tiny-footer">
+                Copyright &copy; AirSynQ 2019
+              </div>
+            </div>
+            <!-- /. tiny-footer -->
+          </div>
         </div>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        particlesJS.load('particles-js', './assets/particles.json', function () {
-            console.log('callback - particles.js config loaded');
-        });
+      particlesJS.load("particles-js", "./assets/particles.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
     </script>
     <script>
-        $(function () {
-            var header = $(".navbar");
-            $(window).scroll(function () {
-                var scroll = $(window).scrollTop();
+      $(function () {
+        var header = $(".navbar");
+        $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
 
-                if (scroll >= 20) {
-                    header.addClass('nav-shadow')
-                } else {
-                    header.removeClass('nav-shadow')
+          if (scroll >= 20) {
+            header.addClass("nav-shadow");
+          } else {
+            header.removeClass("nav-shadow");
+          }
+        });
+      });
+    </script>
+    <script>
+      // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function (event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $("html, body").animate(
+                {
+                  scrollTop: target.offset().top
+                },
+                1000,
+                function () {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) {
+                    // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  }
                 }
-            });
+              );
+            }
+          }
         });
     </script>
-</body>
-
+  </body>
 </html>
